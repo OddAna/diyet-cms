@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "calories": {
+      "type": "integer"
+    }
+  }
+}
