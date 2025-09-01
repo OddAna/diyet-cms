@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "theme_primary": {
+      "type": "string"
+    },
+    "theme_accent": {
+      "type": "string"
+    },
+    "theme_dark": {
+      "type": "boolean",
+      "default": false
+    },
+    "headerMenu": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "headerCtaLabel": {
+      "type": "string"
+    },
+    "headerCtaUrl": {
+      "type": "string"
+    },
+    "socialLinks": {
+      "type": "component",
+      "component": "shared.social-link",
+      "repeatable": true
+    },
+    "footerColumns": {
+      "type": "component",
+      "component": "footer.column",
+      "repeatable": true
+    },
+    "footerText": {
+      "type": "blocks"
+    }
+  }
+}
